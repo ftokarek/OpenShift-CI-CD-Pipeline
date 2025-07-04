@@ -1,18 +1,25 @@
-# CI/CD Tools and Practices Final Project Template
+# CI/CD Tools and Practices – Final Project
 
-This repository contains the template to be used for the Final Project for the Coursera course **CI/CD Tools and Practices**.
+This repository contains the implementation of the final project for the **Continuous Integration and Continuous Delivery (CI/CD)** course on Coursera, developed in the IBM Skills Network Labs environment as a part of the IBM DevOps and Software Engineering certificate.
 
-## Usage
+The goal of this project is to design and execute a complete **Continuous Integration and Continuous Delivery (CI/CD)** pipeline using modern DevOps tools including **GitHub Actions**, **Tekton** and **OpenShift**.
 
-This repository is to be used as a template to create your own repository in your own GitHub account. No need to Fork it as it has been set up as a Template. This will avoid confusion when making Pull Requests in the future.
+## ✅ Key Features
 
-From the GitHub **Code** page, press the green **Use this template** button to create your own repository from this template.
+- CI pipeline in **GitHub Actions** for:
+  - Code linting
+  - Unit testing
 
-Name your repo: `ci-cd-final-project`.
+- CD pipeline with **Tekton on OpenShift** for:
+  - Linting and testing using Tekton Tasks
+  - Building container images
+  - Deploying to the OpenShift cluster
 
-## Setup
+- Automated end-to-end delivery of code changes using cloud-native tools.
 
-After entering the lab environment you will need to run the `setup.sh` script in the `./bin` folder to install the prerequisite software.
+## 🛠️ Setup
+
+After launching the lab environment, install the required dependencies by running:
 
 ```bash
 bash bin/setup.sh
@@ -24,15 +31,13 @@ Then you must exit the shell and start a new one for the Python virtual environm
 exit
 ```
 
-## Tasks
-
-
 ## License
 
 Licensed under the Apache License. See [LICENSE](/LICENSE)
 
-## Author
+## 👤 Author
 
-Skills Network
+This project was initially created by **Skills Network** as part of the IBM Coursera course.  
+It was further extended and customized by **Franciszek Tokarek** for the final capstone implementation.
 
 ## <h3 align="center"> © IBM Corporation 2023. All rights reserved. <h3/>
